@@ -13,44 +13,46 @@
         <link rel="stylesheet" href="style.css">
         <!---- Icons ---->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="script.js"></script>
+
 
     </head>
     <body>
         <div class="container">
             <header>LAKELAND REV 2 ROTORS REGISTRATION FORM</header>
-            <form action="#">
+            <form  method="get" action="#" id="mainForm">
                 <div class="form_first">
                     <div class="details personal">
                         <span class="title">Personal Details</span>
                         <div class="fields">
                             <div class="input-field">
                                 <label>First Name</label>
-                                <input type="text" placeholder="Enter Your First Name" required>
+                                <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" class="required hilightable">
                             </div>
 
                             <div class="input-field">
                                 <label>Last Name</label>
-                                <input type="text" placeholder="Enter Your Last Name" required>
+                                <input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" class="required hilightable">
                             </div>
 
                             <div class="input-field">
                                 <label>Phone Number</label>
-                                <input type="number" placeholder="Enter Your Phone Number" required>
+                                <input type="number"  name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number" class="hilightable">
                             </div>
 
                             <div class="input-field">
                                 <label>Email</label>
-                                <input type="email" placeholder="Enter Your Email Address" required>
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" class="required hilightable">
                             </div>
 
                             <div class="input-field">
-                                <label>Password</label>
-                                <input type="Password" placeholder="Enter Your Password" required>
+                                <label>Username</label>
+                                <input type="text" name="username" id="username" placeholder="Enter Your Username" class="hilightable">
                             </div>
 
                             <div class="input-field">
-                                <label>Re-type Password</label>
-                                <input type="Password" placeholder="Enter Your Password" required>
+                                <label> Password</label>
+                                <input type="Password" name="password" id="password" placeholder="Enter Your Password" class="hilightable">
                             </div>
 
                         </div>
@@ -88,15 +90,25 @@
                             </label>
                         </div>
                     </div>
-                    <button class="nxtButton">
-                        <span class="btnText">Submit </span>
-                        <i class="uil uil-navigator"></i>
-                        </span>
-                    </button>
+                    <div class="buttons">
+                        <button class="nxtButton">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                            </span>
+                        </button>
+                       
+                        <button type="reset" class="clearButton">
+                            <span class="btnText">Clear Form</span>
+                            <i class="uil uil-refresh"></i>
+                            </span>
+                        </button>
+                    </div>
+
                 </div>
                 <div class="form_last">
-                    <h3>Thank you for your support! We will reach out by email as soon as we have status on your Order!</h1>
+                    <h3>Thank you for your support! We will reach out by email as soon as we have status on your Inquiry!</h3>
                 </div>
+
 
             </form>
         </div>

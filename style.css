@@ -50,6 +50,17 @@ body{
     background-color: #fff;
 }
 
+.container form .form_last .form_first{
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.container form .form_last{
+    opacity: 0; 
+    pointer-events: none;
+}
+
+
 .container form .details{
     margin-top: 30px;
 
@@ -180,7 +191,7 @@ input[type="radio"]:checked:after{
     color: #333;
 }
 
-.container form .nxtButton{
+.container form .nxtButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,11 +208,49 @@ input[type="radio"]:checked:after{
     transition: all 0.3s linear;
     cursor: pointer;
 }
-
+.container form .clearButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 200px;
+    background-color: rgb(126, 126, 240);
+    margin-top: 20px;
+    margin: 25px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
 form .nxtButton:hover{
+    background-color: rgb(140, 126, 240);
+}
+form .clearButton:hover{
     background-color: rgb(140, 126, 240);
 }
 
 form .nxtButton i{
     margin: 0 6px;
+}
+form .clearButton i{
+    margin: 0 6px;
+}
+
+.highlight {
+    background-color: #FFE0B2;
+}   
+
+.error {
+    background: #FFCDD2 url(imgs/error.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #FF5252;
+    border-color: #FF1744;    
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
