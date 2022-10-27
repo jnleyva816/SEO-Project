@@ -11,7 +11,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(126, 126, 240);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../imgs/background.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
