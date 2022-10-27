@@ -10,10 +10,11 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../imgs/background.png);
     background-size: cover;
     background-position: center;
+    flex-direction: column;
 }
 
 .container{
@@ -25,6 +26,7 @@ body{
     border-radius: 6px;
     margin: 0 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 24px;
 }
 
 .container header{
@@ -42,7 +44,7 @@ body{
     height: 3px;
     width: 27px;
     border-radius: 8px;
-    background-color: rgb(126, 126, 240);
+    background-color: #f4f5c0;
 }
 
 .container form{
@@ -173,10 +175,10 @@ input[type="radio"]:hover{
     transform: scale(1.05);
 }
 input[type="radio"]:checked{
-    border: 3px solid #478bfb;
+    border: 3px solid #f4f5c0;
 }
 input[type="radio"]:checked:after{
-    background-color: #478bfb;
+    background-color: #f4f5c0;
 }
 
 .radio_buttons{
@@ -204,7 +206,7 @@ input[type="radio"]:checked:after{
     color: #fff;
     border-radius: 5px;
     min-width: 200px;
-    background-color: rgb(126, 126, 240);
+    background-color: #e3e656;
     margin-top: 20px;
     margin: 25px;
     transition: all 0.3s linear;
@@ -221,17 +223,17 @@ input[type="radio"]:checked:after{
     color: #fff;
     border-radius: 5px;
     min-width: 200px;
-    background-color: rgb(126, 126, 240);
+    background-color: #e3e656;
     margin-top: 20px;
     margin: 25px;
     transition: all 0.3s linear;
     cursor: pointer;
 }
 form .nxtButton:hover{
-    background-color: rgb(140, 126, 240);
+    background-color: #fafc7e;
 }
 form .clearButton:hover{
-    background-color: rgb(140, 126, 240);
+    background-color: #fafc7e;
 }
 
 form .nxtButton i{
@@ -255,4 +257,57 @@ form .buttons{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+.logo{
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f4f5c0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+
 }
