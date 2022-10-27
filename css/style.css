@@ -311,3 +311,8 @@ form .buttons{
     width: 100%;
 
 }
+.logo a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
