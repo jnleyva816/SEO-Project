@@ -46,11 +46,9 @@ window.addEventListener("load", function() {
             }
             else {
                 makeClean(requiredInputs[i]);
-                
             }
         }
         
-        alert("Your form was submitted!");
 
     });
 

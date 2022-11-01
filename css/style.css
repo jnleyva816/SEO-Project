@@ -26,7 +26,8 @@ body{
     border-radius: 6px;
     margin: 0 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding-top: 24px;
+    padding-top: 50px;
+    margin-top: 150px;
 }
 
 .container header{
