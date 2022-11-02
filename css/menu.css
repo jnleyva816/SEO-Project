@@ -8,7 +8,7 @@
 
 .banner{
     width: 100%;
-    height: 150vh; /*100vh, banner heights*/
+    height: 100vh; /*100vh, banner heights*/
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../imgs/background.png);
     background-size: cover;
     background-position: center;
