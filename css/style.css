@@ -26,7 +26,8 @@ body{
     border-radius: 6px;
     margin: 0 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding-top: 24px;
+    padding-top: 50px;
+    margin-top: 150px;
 }
 
 .container header{
@@ -60,7 +61,7 @@ body{
 }
 
 .container form .form_last{
-    opacity: 0; 
+    opacity: 1; 
     pointer-events: none;
 }
 
@@ -248,7 +249,7 @@ form .clearButton i{
 }   
 
 .error {
-    background: #FFCDD2 url(imgs/error.png) no-repeat 98% center;
+    background: #FFCDD2 url(../imgs/error.png) no-repeat 98% center;
     box-shadow: 0 0 5px #FF5252;
     border-color: #FF1744;    
 }

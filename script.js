@@ -12,6 +12,10 @@ function makeClean(element){
     element.classList.remove("error");		
 }
 
+function displayText(){
+    {document.getElementById("errors").innerHTML = document.getElementById("errors").value;}
+}
+
 
 window.addEventListener("load", function() {    
 
@@ -45,13 +49,21 @@ window.addEventListener("load", function() {
                 requiredInputs[i].classList.add("error");;
             }
             else {
-                makeClean(requiredInputs[i]);
-                
+                var msg = "Your form has been submitted! ";
+                var errorArea = document.getElementById("errors");
+                errorArea.innerHTML = "<p>" + msg + "</p>";
+                setTimeout(function(){
+                    mainForm.submit();
+
+                },5000);
             }
         }
         
-        alert("Your form was submitted!");
 
     });
 
+
+
 });
+
+
