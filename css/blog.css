@@ -1,0 +1,105 @@
+/*Written by Samiul Mumin using Joshua Leyva's code*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.blog{
+    width: 100%;
+    height: 120vh; /*90vh*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog .blog_content img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.blog_content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h1{
+    color:#ccce78;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.text h5{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.text p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.registerBtn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #f4f5c0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.registerBtn span{
+    background: #ccce78;
+    height: 100%;
+    width: 0; /*unmodified value: 0*/
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s ease;
+}
+
+.registerBtn:hover span{
+    width: 100%;
+	
+
+}
+
+.registerBtn:hover{
+    border:none;
+}
+
+.registerBtn a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}

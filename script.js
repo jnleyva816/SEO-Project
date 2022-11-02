@@ -49,13 +49,7 @@ window.addEventListener("load", function() {
                 requiredInputs[i].classList.add("error");;
             }
             else {
-                var msg = "Your form has been submitted! ";
-                var errorArea = document.getElementById("errors");
-                errorArea.innerHTML = "<p>" + msg + "</p>";
-                setTimeout(function(){
-                    mainForm.submit();
-
-                },5000);
+                makeClean(requiredInputs[i]);
             }
         }
         
