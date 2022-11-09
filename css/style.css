@@ -275,7 +275,7 @@ form .buttons{
 }
 
 .navbar{
-    width: 85%;
+    width: 100%; /*was 85%*/
     margin: auto;
     padding: 25px 0;
     display: flex;

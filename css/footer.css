@@ -7,11 +7,12 @@
 }
 .footer-container{
     background-color: #212329;
-    padding-bottom: 4rem;
+	height: 100%; /*added*/
+    padding-bottom: 4rem; /*originally */
     width: 100%;
 }
 footer{
-    width: 80%;
+    width: 100%; /*was 85*/
     height: auto;
     background-color: #212329;
     color: white;

@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<!---- FLORIDA POLYTECHNIC UNIVERSITY ---->
-<!---- Written by Joshua Leyva ---->
-<!---- Lakeland Rev 2 Rotors ---->
 <html lang="en">
-    <head>
-        <meta charset ="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1">
-
-        <title>Subscribe to Find out more!</title>
-        <!---- CSS ---->
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subscribe to Find out more!</title>
+	  
+	 <!---- CSS ---->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/footer.css">
         <!---- Icons ---->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <script src="script.js"></script>
-
-
-    </head>
-    <body>
-        <nav class="banner">
-            <div class="navbar">
-                <h3 class=logo><a href="index.html">LAKELAND REV 2 ROTORS</a></h3>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body>
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="#">Lakeland Rev2Rotors</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav ml-auto">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="kits.html">KITS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+      </ul>
+</div>
+  </nav> 
+  	<!-- body code goes here -->
+   <nav class="banner">
+           <!-- <div class="navbar">
+                <h3 class="logo"><a href="index.html">LAKELAND REV 2 ROTORS</a></h3>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="kits.html">KITS</a></li> <!-- Added by Samiul Mumin -->
-					<li><a href="blog.html">BLOG</a></li> <!-- Added by Samiul Mumin -->
+                    <li><a href="kits.html">KITS</a></li> 
+					<li><a href="blog.html">BLOG</a></li> 
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="membership-jl.html">REGISTRATION</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
         <div class="container">
             <header>LAKELAND REV 2 ROTORS REGISTRATION FORM</header>
@@ -124,7 +136,48 @@
 
             </form>
         </div>
-        <footer class="footer-container">
+<div class="row bg-primary"> <!-- adjusted bg color -->
+          <div class="col-lg-3 col-md-6">
+			<footer class="footer-container">
+             <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Terms of Service</a>
+			  </div> </footer>
+			</div>
+			
+          <div class="col-lg-3 col-md-6">
+			 <footer class="footer-container">
+			  <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="registration.html">Registration</a>
+				 </div> </footer>
+			</div>
+			
+          <div class="col-lg-3 col-md-6">
+			 <footer class="footer-container">
+			  <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twiter</a>
+                <a href="#">Instagram</a>
+                <a href="#">GoFundMe</a>
+				 </div> </footer>
+			</div>
+			
+          <div class="col-lg-3 col-md-6">
+			<footer class="footer-container">
+			 <div class="footer-email-form">
+                <h2>Subscribe to our Newsletter!</h2>
+                <input type="email" placeholder="Enter Your Email" id="footer-email">
+                <input type="submit" value="Subscribe Now!" id="footer-email-btn">
+             </div> </footer>
+			</div>
+        </div> <!-- End Row class -->
+      <!--  <footer class="footer-container">
             <div class="footer-heading footer-1">
                 <h2>About Us</h2>
                 <a href="about.html">About</a>
@@ -149,8 +202,13 @@
                 <input type="email" placeholder="Enter Your Email" id="footer-email">
                 <input type="submit" value="Subscribe Now!" id="footer-email-btn">
             </div>
-        </footer>
+        </footer> -->
 
-    </body>
-    
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
